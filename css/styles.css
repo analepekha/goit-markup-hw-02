@@ -1,24 +1,194 @@
-/* цвет основного текста #757575; */
-/* вторичный цвет текста  #212121;*/
-/* цвет текста в футере #FFFFFF  */
-/* акцент #2196F3; */
-/* основной цвет фона #fff */
-/* вторичный цвет фона #F5F4FA; */
-/* цвет секции герой и футера #2F303A; */
-/* цвет текста герой #fff */
 :root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
+  /* Основные шрифты */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  /* Светлая тема текста */
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --primary-white-color: #ffffff;
+  /* Темная тема текста */
+  --primary-text-darktheme: #fff;
+  /* Светлая тема фона */
+  --primary-light-bg: #fff;
+  --secondary-light-bg: #f5f4fa;
+  /* Темная тема фона */
+  --primary-dark-bg: #2f303a;
 }
 
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
+  font-family: var(--main-font);
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-light-bg);
+}
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: #2196f3;
+}
+.logo-item-header {
+  color: #000000;
+}
+.logo-item-footer {
+  color: var(--primary-text-darktheme);
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--primary-text-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-link-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--secondary-text-color);
+}
+.nav-link-contacts:hover,
+.nav-link-contacts:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--primary-dark-bg);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-text-darktheme);
+}
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: var(--primary-text-darktheme);
+  background-color: var(--accent-color);
+}
+.hero-btn:hover {
+  background-color: #188ce8;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Main index.html */
+.subtitle-benefits {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.benefits-txt {
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+}
+.team {
+  background-color: var(--secondary-light-bg);
+}
+.space-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.subtitle-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.team-txt {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
+/* Main portfolio.html */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+
+  color: var(--primary-text-color);
+  background-color: var(--secondary-light-bg);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-text-darktheme);
+  background-color: var(--accent-color);
+}
+.subtitle-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-txt {
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: var(--secondary-text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-dark-bg);
+}
+.loc {
+  line-height: 1.7;
+  font-style: normal;
+
+  color: var(--primary-text-darktheme);
+}
+.contacts-link {
+  text-decoration: none;
+  font-style: normal;
+
+  color: rgba(255, 255, 255, 0.6);
 }
