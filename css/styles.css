@@ -23,6 +23,9 @@ body {
 
   color: var(--primary-text-color);
 }
+.list {
+  list-style-type: none;
+}
 
 /* Header */
 .header {
@@ -43,10 +46,14 @@ body {
 .logo-item-footer {
   color: var(--primary-text-darktheme);
 }
+.current-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
 .nav-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 
@@ -116,6 +123,7 @@ body {
 /* Main index.html */
 .subtitle-benefits {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -163,6 +171,10 @@ body {
   color: var(--primary-text-darktheme);
   background-color: var(--accent-color);
 }
+.portfolio-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
 .subtitle-portfolio {
   font-weight: 700;
   font-size: 18px;
@@ -172,6 +184,7 @@ body {
 .portfolio-txt {
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
 }
